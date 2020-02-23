@@ -1,0 +1,16 @@
+{
+    "name": "fug0/studentlist",
+    "authors": [
+        {
+            "name": "fug0",
+            "email": "example@example.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+    	"psr-4": {
+    		"Src\\": "src",
+    		"Src\\Core\\": "src/core"
+    	}
+    }
+}
