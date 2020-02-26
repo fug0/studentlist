@@ -12,6 +12,15 @@ require_once ROOT_DIR . '/../vendor/autoload.php';
 
 try {
 	$di = new Di();
+
+	$services = require CONFIG_DIR.'service.php';
+
+	foreach ($services as $service) 
+	{
+		$provider = new $service($di);
+		$provider->init();
+	}
+
 	$app = new App($di);
 	$app->run();
 } catch (\ErrorException $e) {

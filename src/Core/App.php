@@ -13,6 +13,7 @@ class App
 
 	public function run()
 	{
-		
+		$db = $this->di->get('db');
+		var_dump($db->query('SELECT * FROM students'));
 	}
 }
