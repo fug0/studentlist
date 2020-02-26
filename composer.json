@@ -9,8 +9,8 @@
     "require": {},
     "autoload": {
     	"psr-4": {
-    		"Src\\": "src",
-    		"Src\\Core\\": "src/core"
+    		"Src\\": "Src",
+    		"Src\\Core\\": "Src/Core"
     	}
     }
 }
