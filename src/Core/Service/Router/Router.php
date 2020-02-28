@@ -4,7 +4,7 @@ namespace Src\Core\Service\Router;
 
 class Router
 {
-	public $routes = [];
+	private $routes = [];
 	private $dispatcher;
 	private $host;
 
