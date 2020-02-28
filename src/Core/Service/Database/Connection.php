@@ -20,7 +20,6 @@ class Connection
             $dsn = 'mysql:host='.$config['host'].';port=3307;dbname='.$config['db_name'].';charset'.$config['charset'];
  
             $this->link = new \PDO($dsn, $config['user'], $config['pass']);
-            var_dump($this->link);
 
         }catch (\Exception $e){
             $e->getMessage();
@@ -36,7 +35,6 @@ class Connection
 
     public function query($sql, $values = [])
     {
-    	var_dump($this->link);
 
         $sth = $this->link->prepare($sql);
 

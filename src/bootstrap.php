@@ -11,7 +11,7 @@ define ('CONFIG_DIR', __DIR__.'/Config/');
 require_once ROOT_DIR . '/../vendor/autoload.php';
 
 try {
-	$di = new Di();
+	$di = new Di;
 
 	$services = require CONFIG_DIR.'service.php';
 
