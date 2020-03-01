@@ -34,10 +34,7 @@ class App
 
 			$controller = '\\Src\\Core\\Controller\\'.$class;
 
-			//call_user_func([new $controller($this->di), $action]);
-
-			var_dump($class);
-			var_dump($action);
+			call_user_func([new $controller($this->di), $action]);
 
 		}catch (\ErrorException $e)
 		{
